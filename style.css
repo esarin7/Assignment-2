@@ -1,0 +1,257 @@
+/* GENERAL STYLES */
+
+.wrapper { 
+    max-width: 900px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+}
+
+/* HEADER */
+
+.logo {
+    position: absolute;
+    left: 50px;
+    font-size: 66px;
+}
+
+nav .logo{
+    color: #73a49b;
+}
+
+nav  {
+    width: 100%;
+    height: 100px;
+    background-color: #e9e7e8;
+    color:#7395a4;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 1.25rem;
+    align-items: center;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+nav li {
+    list-style: none;
+    padding: 18px;
+    font-weight: 900;
+    font-family: 'Federo', sans-serif;
+}
+
+nav a {
+    color: #7395a4;
+    font-size: 110%;
+}
+
+nav a:hover{
+    color:#a27079;
+}
+
+.menu-button {
+    border: none;
+    background: none;
+    display: none;
+    font-size: 36px;
+}
+
+.menu-button:hover {
+    cursor: pointer;
+}
+
+/* HERO SECTION */
+
+.hero h1 {
+    font-size: 100px;
+    font-weight: 700;
+    font-family: 'Cinzel', serif;
+}
+
+.hero h2 {
+    font-size: 60px;
+    font-weight: 600;
+    font-family: 'Cinzel', serif;
+    text-transform: uppercase;
+}
+
+.primary-button {
+    background: #73a49b;
+    font-family: 'Federo', sans-serif;
+    font-weight: 700px;
+    color:#bbbbbb;
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-weight: 700px;
+}
+
+.primary-button:hover {
+   color:#a27079;
+}
+
+.hero {
+    background-image: 
+    linear-gradient(
+        rgba(0, 0, 0, 0.6) 5%,
+        rgba(0, 0, 0, 0.3) 30%,
+        rgba(0, 0, 0, 0.3) 60%,
+        rgba(0, 0, 0, 0.6) 100%
+    ),
+    url(images/bookcase.jpg);
+    background-size: cover;
+    background-position: 50% 0%;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.hero-content {
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-button:hover {
+    cursor: pointer;
+}
+    
+/* MAIN SECTION */
+
+main {
+    background-color: #e9e7e8;
+    line-height: 1.5;
+}
+
+.content h1 {
+    font-family: 'Federo', sans-serif;
+    font-size: 40px;
+    padding-top: 20px;
+}
+
+.content h3 {
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    font-size: 120px;
+    font-weight: 600;
+}
+
+img {
+    width: 100%;
+}
+
+.main-content {
+    padding: 80px 0;
+}
+
+.image-row { 
+    padding: 22px 0; 
+    left: 25px;
+}
+
+.img-container {
+    display: inline-block;
+    width: 385px;
+    height: 350px;
+    margin-bottom: 22px;
+    margin-right: 60px;
+}
+
+.img-container p {
+    text-align: left;
+}
+ 
+/* FOOTER SECTION */
+
+footer {
+    background-color:#6f7170;
+    padding: 40px;
+    border-top: 8px solid #73a49b;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+}
+
+footer li {
+    list-style: none;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+}
+
+footer a {
+    color: #bbbbbb;
+    font-size: 16px;
+}
+
+footer a:hover{
+    color:#73a49b;
+}
+
+footer strong {
+    font-size: 22px;
+    color:#a27079;
+    font-family: 'Federo', sans-serif;
+    text-decoration: underline;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 600px) {
+    .menu-button {
+        display: block;
+        margin: 300px;
+    }
+    .top-links {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-content {
+        text-align: center;
+    }
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .content h1 {
+        font-size: 1.5rem;
+    }
+    .content h3 {
+        font-size: 2.5rem;
+    }
+    .image-row p {
+        font-size: 0.8rem;
+    }
+    .img-container {
+        width: 300px;
+        height: 300px;
+        margin-bottom: 15px;
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer-container {
+        flex-direction: column;
+    }
+}
+
+
